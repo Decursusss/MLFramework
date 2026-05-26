@@ -9,7 +9,7 @@ def plot_predictions(y_true, y_pred, norm_params, denorm_fn, title="Predictions"
     plt.plot(y_pred_real, label="Predicted Price",  color="red", alpha=0.7)
     plt.title(title)
     plt.legend()
-    plt.savefig(f"evaluation/{title}.png")
+    plt.savefig(f"evaluation/reports/{title}.png")
     plt.show()
 
 def plot_errors(y_true, y_pred, norm_params, denorm_fn, title="Errors"):
@@ -21,5 +21,5 @@ def plot_errors(y_true, y_pred, norm_params, denorm_fn, title="Errors"):
     plt.bar(range(len(errors)), errors, color=["red" if e < 0 else "green" for e in errors])
     plt.axhline(0, color="black", linewidth=0.8)
     plt.title(title)
-    plt.savefig(f"evaluation/{title}.png")
+    plt.savefig(f"evaluation/reports/{title}.png")
     plt.show()
