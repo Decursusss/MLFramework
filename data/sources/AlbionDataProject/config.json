@@ -1,0 +1,30 @@
+{
+  "base_url": "https://europe.albion-online-data.com",
+  "item_id": ["T4_BAG"],
+  "locations": ["Caerleon", "Bridgewatch", "Martlock", "Lymhurst", "Thetford", "FortSterling"],
+  "qualities": [1, 2, 3],
+  "time_scale": 1,
+  "days_back": 60,
+  "data_dir": "collected/AlbionData",
+  "price_columns": [
+    "item_id",
+    "city",
+    "quality",
+    "sell_price_min",
+    "sell_price_min_date",
+    "sell_price_max",
+    "sell_price_max_date",
+    "buy_price_min",
+    "buy_price_min_date",
+    "buy_price_max",
+    "buy_price_max_date"
+  ],
+  "history_columns": [
+    "item_id",
+    "location",
+    "quality",
+    "timestamp",
+    "item_count",
+    "avg_price"
+  ]
+}
