@@ -24,15 +24,15 @@ class MlAlgorithmInterface:
                                    )
         elif model_type.lower() == "random_forest":
             model = train_random_forest(X, Y,
-                                        n_trees=50, #Trees amount (how many trees there will be existed)
+                                        n_trees=500, #Trees amount (how many trees there will be existed)
                                         max_depth=5, #Branch trees deepness (how much will be deep tree higher not better)
                                         min_samples=3 #Minimal points in list (optimal 3 but could be more)
                                         )
         elif model_type.lower() == "xgboost":
             model = train_xgboost(X, Y,
-                                  n_trees=100, #Trees amount (how many trees there will be existed)
+                                  n_trees=500, #Trees amount (how many trees there will be existed)
                                   max_depth=5, #Branch trees deepness (how much will be deep tree higher not better)
-                                  lr=0.05, #Learning rate (smaller mean more looking rate more efficient model)
+                                  lr=0.01, #Learning rate (smaller mean more looking rate more efficient model)
                                   lam=1.0 #Regulazation
                                   )
         else:
