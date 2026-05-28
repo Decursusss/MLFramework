@@ -11,8 +11,8 @@ Currently implemented models:
 
 ### 1. Clone the repository
 ```bash
-git clone <your-repo-url>
-cd MLAlgorithms
+git clone https://github.com/Decursusss/MLFramework.git
+cd MLFramework
 ```
 
 ### 2. Install dependencies
